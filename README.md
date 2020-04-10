@@ -24,16 +24,29 @@ pyfilecalltree.generate_calltree("source.py","output.png")
 
 ### Example
 
+`example.py`
+```
+def function3():
+  function2()
+
+def function2():
+  return(0)
+
+def function1():
+  function2()
+  function3()
+
+def main():
+  function1()
+  
+main()
+```
+
 ```
 import pyfilecalltree
-import urllib.request
-
-urllib.request.urlretrieve(
-    'https://raw.githubusercontent.com/'+
-    'geekcomputers/Python/0e04a63eab7cc'+
-    '21e605db0d07760e1b4a800c06f/'+
-    'bank_managment_system/frontend.py',
-    './example.py')
     
 pyfilecalltree.generate_calltree("./example.py") 
 ```
+
+![example calltree result](calltree.png)
+
