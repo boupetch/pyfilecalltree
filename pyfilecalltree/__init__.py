@@ -39,6 +39,6 @@ def generate_calltree(
         for call in defi["calls"]:
             g.edge(defi["name"], call)
     g.view()
-    check_call(['dot','-Tpng','hello.gv','-o',output])
+    check_call(['dot','-Tpng','calltree.gv','-o',output])
     os.remove('calltree.gv')
     os.remove('calltree.gv.pdf')
