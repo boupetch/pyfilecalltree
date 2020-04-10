@@ -8,5 +8,8 @@ setup(
     author='Paul Bouchequet',
     license='unlicense',
     packages=['pyfilecalltree'],
+    install_requires=[
+          'graphviz',
+      ],
     zip_safe=False
 )

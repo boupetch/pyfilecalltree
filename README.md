@@ -10,7 +10,7 @@ Generate call tree from a Python source file without profiling.
 ### Pip install
 
 ```
-pip install git+ssh://git@github.com/boupetch/ptolemaios-sdk-package.git
+pip install git+ssh://git@github.com/boupetch/pyfilecalltree.git
 ```
 
 ## Usage
