@@ -11,7 +11,7 @@ def generate_calltree(
     
     lines = [line for line in open(filename)]
     
-    with open(file) as f:
+    with open(filename) as f:
         code = f.read()
 
     a = ast.parse(code)
