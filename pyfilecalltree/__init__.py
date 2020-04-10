@@ -17,7 +17,6 @@ def generate_calltree(
     a = ast.parse(code)
     definitions = [n for n in ast.walk(a) if type(n) == ast.FunctionDef]
 
-
     defs = [lines[(i.lineno-1)] for i in definitions]
     defs = [i.replace("def ","") for i in defs]
     defs = [i.split("(")[0] for i in defs]
