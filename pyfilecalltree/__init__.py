@@ -41,3 +41,4 @@ def generate_calltree(
     g.view()
     check_call(['dot','-Tpng','hello.gv','-o',output])
     os.remove('calltree.gv')
+    os.remove('calltree.gv.pdf')
